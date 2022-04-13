@@ -202,10 +202,6 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1.vendor \
     android.hardware.biometrics.fingerprint@2.1-service.sony
 
-# For config.fs
-PRODUCT_PACKAGES += \
-    fs_config_files
-
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor \
