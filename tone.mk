@@ -335,6 +335,9 @@ PRODUCT_PACKAGES += \
 ## Partitions
 $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 
+## Partitions
+$(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti \
