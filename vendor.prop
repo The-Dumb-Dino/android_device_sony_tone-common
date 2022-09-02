@@ -155,6 +155,11 @@ net.tcp.2g_init_rwnd=10
 
 # USB
 sys.usb.controller=6a00000.dwc3
+vendor.usb.dpl.inst.name=dpl
+vendor.usb.qdss.inst.name=qdss
+vendor.usb.rmnet.func.name=rmnet_bam
+vendor.usb.rmnet.inst.name=rmnet
+vendor.usb.rndis.func.name=rnsis_bam
 
 # Wifi
 wifi.interface=wlan0
