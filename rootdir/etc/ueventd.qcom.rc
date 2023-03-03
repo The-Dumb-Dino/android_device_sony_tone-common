@@ -268,6 +268,9 @@
 # IR device
 /dev/lirc0                0660   system     system
 
+# Charger
+/sys/class/power_supply/battery  charging_enabled       0660   system     system
+
 # Device block for FRP
 /dev/block/bootdevice/by-name/frp                       0660   system     system
 /dev/block/platform/soc/7464900.sdhci/by-name/frp       0600   system     system
