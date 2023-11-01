@@ -73,6 +73,14 @@ function blob_fixup() {
         sed -i "s/\/system\/product\/framework\//\/system\/system_ext\/framework\//g" "${2}"
         ;;
 
+    vendor/bin/pm-service)
+        grep -q libutils-v33.so "${2}" || "${PATCHELF}" --add-needed "libutils-v33.so" "${2}"
+        ;;
+
+    vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so)
+        sed -i "s/libhidltransport.so/libbase_shim.so\x00\x00\x00\x00/" "${2}"
+        ;;
+
     # Provide shim for libdpmframework.so
     system_ext/lib64/libdpmframework.so)
         for  LIBCUTILS_SHIM in $(grep -L "libcutils_shim.so" "${2}"); do
@@ -86,7 +94,6 @@ function blob_fixup() {
 
     vendor/lib64/libtpm.so)
         patchelf --add-needed "libshim_binder.so" "${2}"
-        ;;
 
     system_ext/lib64/lib-imsvideocodec.so)
         patchelf --add-needed "libims-shim.so" "${2}"
