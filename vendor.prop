@@ -92,6 +92,7 @@ debug.egl.hw=1
 debug.sf.hw=1
 debug.sf.latch_unsignaled=1
 dev.pm.dyn_samplingrate=1
+ro.hardware.egl=adreno
 persist.demo.hdmirotationlock=false
 persist.sys.wfd.virtual=0
 ro.opengles.version=196610
