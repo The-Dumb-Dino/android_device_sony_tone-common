@@ -210,7 +210,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor \
     android.hardware.gatekeeper@1.0-impl \
-    android.hardware.gatekeeper@1.0-service
+    android.hardware.gatekeeper@1.0-service \
+    libion.vendor
 
 # GPS
 PRODUCT_PACKAGES += \
@@ -243,6 +244,8 @@ PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
     android.hidl.base@1.0.vendor \
     android.hidl.manager@1.0 \
+    android.hidl.manager-V1.0-java \
+    libhidlmemory.vendor \
     libhidltransport \
     libhidltransport.vendor \
     libhwbinder \
@@ -328,6 +331,7 @@ PRODUCT_PACKAGES += \
     libOmxQcelp13Enc \
     libOmxVdec \
     libOmxVenc \
+    libOmxVidcCommon \
     libstagefrighthw
 
 # OTG
@@ -391,6 +395,9 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.2.vendor \
     libprotobuf-cpp-full \
     librmnetctl \
+    libnetutils.vendor \
+    libsqlite.vendor \
+    libsysutils.vendor
     libxml2
 
 PRODUCT_PACKAGES += \
