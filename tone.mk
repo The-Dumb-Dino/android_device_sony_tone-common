@@ -246,6 +246,7 @@ PRODUCT_PACKAGES += \
     android.hidl.manager@1.0 \
     android.hidl.manager-V1.0-java \
     libhidlmemory.vendor \
+    libhidlbase-v32 \
     libhidltransport \
     libhidltransport.vendor \
     libhwbinder \
