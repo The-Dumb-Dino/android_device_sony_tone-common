@@ -426,6 +426,10 @@ PRODUCT_PACKAGES += \
     libcutils_shim \
     libims-shim
 
+# System Suspend
+PRODUCT_PACKAGES += \
+    android.system.suspend@1.0
+
 # Telephony
 PRODUCT_PACKAGES += \
     ims-ext-common \
